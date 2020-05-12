@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1024px;
+    margin: 0px auto;
+}
+.navbar-logo__name{
+    color:  #ffffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #123958;
+    height: 45px;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu-item{
+    margin: 0px 10px;
+}
+.menu-item__link{
+    color: #ffffff;
+    padding: 5px 10px;
+    /* Si quieres poner el texto en cursiva */
+    font-style: italic;
+}
+.menu-item__link:hover{
+    color: #bd4d4d;
+}
+.items-ropa{
+    display: none;
+}
+.vector{
+    color: #ffffff;
+}
+.items-ropa a{
+    color: #180e0e;
+}
+.vector:hover + .items-ropa{
+    position: absolute;
+    padding-top: 10px;
+    display: block;
+}
+
+.contact{
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.contact:hover{
+    background-color: #ffffff;
+    color: #123958;
+}
+.contact:hover a{
+    color: #123958;
+}
