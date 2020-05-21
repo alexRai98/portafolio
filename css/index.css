@@ -2,6 +2,7 @@
 
 :root{
   --primary-color: #0a84e3;
+  --secundary-color: #23475d;
   --gradient-blue: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372)
   /* --gradient-blue: #23475d; */
 }
@@ -21,13 +22,32 @@ li{
 a{
     text-decoration: none;
 }
+/* general styles */
 .container{
     max-width: 1024px;
     margin: 0px auto;
 }
+
+.title-section{
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.social-media a{
+  padding: 0px;
+  color: var(--primary-color);
+}
+
+.social-media a:hover{
+  /* Whitout ideas */
+}
 /* NavBar */
 .header{
     background-color: #ffffff;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
 }
 .navbar{
     display: flex;
@@ -50,28 +70,198 @@ a{
     padding: 5px 10px;
    
 }
+
+.menu-item__link:hover{
+  border-bottom: 2px var(--primary-color) solid;
+}
 .btn-contact{
     border: 1px var(--primary-color) solid;
     border-radius: 5px;
     padding: 5px 10px;
 }
+.btn-contact a{
+  color: var(--primary-color);
+}
 .btn-contact:hover{
     background-color: var(--primary-color);
-    color: #ffffff;
 }
 .btn-contact:hover a{
     color: #ffffff;
 }
+
 /* hero */
 .hero{
   background: var(--gradient-blue);
   color: #ffffff;
 }
 .hero-content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.hero-content__me{
   display: flex;
+  align-items: center;
+}
+.hero-content__me h1{
+  font-size: 40px;
+}
+.hero-content__me strong{
+  color: var(--primary-color);
+}
+/* Project */
+
+.projects{
+  display: grid;
+  padding-top: 50px;
+}
+
+.project-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 28px;
+}
+.project{
+  position: relative;
+}
+.project-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  
+}
+
+.project-overlay{
+  display: none;
+  background: rgba(0,0,0, .5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.project-about__title{
+  align-self: flex-end;
+  width: 100%;
+  padding: 10px 0px;
+  background: rgba(0,0,0, .7);
+
+}
+
+.project:hover .project-overlay{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Skills */
+
+.skills{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+  grid-gap: 0px 20px;
+}
+.skills-tags{
+  width: 100%;
+  padding: 20px 0px 50px 0px;
+  display: grid;
+}
+.skills img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.skills-tags__row{
+  display: flex;
+  align-items: center;
+}
+.skills-tags__row:nth-child(2n){
+  justify-content: center;
+}
+.skills-tags__row:nth-child(2n-1){
   justify-content: space-between;
 }
 
+.skills-tags__row span{
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 1px var(--primary-color) solid;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+/* contact */
+.contact{
+  position: relative;
+  
+}
+.contact-img{
+  width: 100%; 
+  height: 300px;
+  object-fit: cover;
+}
+
+.contact-overlay{
+  background: rgba(0,0,0, .5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.contact-content{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-areas: "redes form"
+                        "title form";
+  padding: 20px 0px;
+}
+.contact-content h1{
+  color: #ffffff;
+  grid-area: title;
+}
+.contact-form{
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input,.contact-form textarea{
+  border: 1px #ffffff solid;
+  border-radius: 7px;
+  height: 30px;
+  margin: 10px 0px;
+  padding-left: 10px;
+  font-size: 15px;
+  outline:none;
+  background: transparent;
+  color: #ffffff;
+}
+::placeholder{
+  color: #ffffff;
+}
+.contact-form textarea{
+  height: 100px;
+}
+
+.contact-social-media{
+  grid-area: redes;
+}
+.submit{
+  border: 1px #ffffff solid;
+  border-radius: 7px;
+  background: transparent;
+  color: #ffffff;
+  width: 80px;
+  padding: 5px 7px;
+  text-align: center;
+  align-self: flex-end;
+  
+}
 
 /* footer */
 .footer {
