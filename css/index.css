@@ -9,7 +9,9 @@
 body{
   font-family: 'Raleway', sans-serif;
 }
-
+img{
+  width: 100%;
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -63,7 +65,7 @@ a{
     align-items: center;
 }
 .menu-item{
-    margin: 0px 10px;
+    margin-right: 15px;
 }
 .menu-item__link{
     color: var(--primary-color);
