@@ -2,6 +2,21 @@ const SectionPorjects = document.querySelector(".projects__container")
 
 const projects =[
     {
+        name:"{Keepable} ✏️",
+        img:"images/keepable.jpg",
+        description:"Website for management notes",
+        tech:["react","emotion","rails"],
+        website:"https://keepable.netlify.app/"
+
+    },
+    {
+        name:"Organizable",
+        img:"images/organizable.png",
+        description:"Website for created boards",
+        tech:["react","emotion","rails"],
+        website:"https://organizable.netlify.app/"
+    },
+    {
         name:"Memeable",
         img:"images/memeable.jpg",
         description:"Website for share memes",
@@ -14,14 +29,6 @@ const projects =[
         description:"Whac a script",
         tech:["js","html","css"],
         website:"https://alexrai98.github.io/whack-script/"
-    },
-    {
-        name:"{Keepable} ✏️",
-        img:"images/keepable.jpg",
-        description:"Website for share memes",
-        tech:["js","html","css"],
-        website:"https://alexrai98.github.io/keepable/"
-
     },
     {
         name:"Soldevilla",
