@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/index.css">
-        <script src="https://kit.fontawesome.com/5ca2c249bf.js" crossorigin="anonymous"></script>
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="navabar-logo">
-                        <h1 class="navbar-logo__name">Alex Rai</h1>
-                    </div>
-                    <div class="navbar-menu">
-                        <ul class="menu">
-                            
-                            <li class="menu-item">
-                                <a class="menu-item__link"  href="#projects">Projects</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-item__link" href="#skills" >Skills</a>
-                            </li>
-                            <li class="btn-contact">
-                                <a class="" href="#contact">work together</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        
-        <section class="hero" id="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <!-- <h3><head>Hey, What's up?</head></h3> -->
-                    <div class="hero-content__me">
-                        <h1>Hi! I'm <strong>Rai Delgado</strong><br> Full stack <strong>web developer</strong><br>
-                            with passion for never<br>stop <strong>learning</strong>
-                        </h1>
-                    </div>
-                    <img class="hero-content__img" src="images/rai.jpg" width="500px" alt="">
-            
-                </div>
-            </div>
-        </section>
-
-        <main class="container">
-            
-            <section class="projects" id="projects">
-                <h1 class="title-section">Projects</h1>
-                <div class="projects__container">
-              
-                  <a target="_black" href="https://polar-taiga-55914.herokuapp.com/" class="project-item">
-                    <img class="project-item__img" src="images/memeable.png"  />
-                    <div class="project-item__details">
-                      <p class="project-item__details--title">Memeable</p>
-                      <p class="project-item__details--subtitle">Website for share memes</p>
-                    </div>
-                  </a>
-
-                  <a target="_black" href="https://alexrai98.github.io/whack-script/" class="project-item">
-                    <img class="project-item__img" src="images/mole.svg"  />
-                    <div class="project-item__details">
-                      <p class="project-item__details--title">Whac a script</p>
-                      <p class="project-item__details--subtitle">Play whac a mole</p>
-                    </div>
-                  </a>
-
-                  <a target="_black" href="https://alexrai98.github.io/keepable/" class="project-item">
-                    <img class="project-item__img" src="images/keepable.jpg"  />
-                    <div class="project-item__details">
-                      <p class="project-item__details--title">{Keepable} ✏️</p>
-                      <p class="project-item__details--subtitle">Website for crate notes</p>
-                    </div>
-                  </a>
-
-                  <a target="_black" href="https://alexrai98.github.io/soldevila/" class="project-item">
-                    <img class="project-item__img" src="images/soldevilla.jpg"  />
-                    <div class="project-item__details">
-                      <p class="project-item__details--title">Soldevilla</p>
-                      <p class="project-item__details--subtitle">Website </p>
-                    </div>
-                  </a>
-
-                  <a target="_black" href="https://alexrai98.github.io/bitacoraP/" class="project-item">
-                    <img class="project-item__img" src="images/bitacora.jpg"  />
-                    <div class="project-item__details">
-                      <p class="project-item__details--title">Bitacora</p>
-                      <p class="project-item__details--subtitle">Innovation Bootcamp</p>
-                    </div>
-                  </a>
-                  
-                </div>
-            </section>
-
-            <section class="skills" id="skills">
-                
-            </section>
-
-        </main>
-        <section class="contact" id="contact">
-            <div class="contact-content container">
-                <h1>Do we create something together?</h1>
-                <form class="contact-form" action="#" method="POST" class="form">
-                    <input type="text" placeholder="Correo">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <a class="submit" type="submit">Enviar</a>
-                </form>
-                <div class="contact-social-media">
-                    <a href="http://udep.edu.pe/" target="_black"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://twitter.com/RaiDelgado3" target="_black"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/alexRai98" target="_black"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/alexander-rai-delgado-cove%C3%B1as/" target="_black"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/5ca2c249bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
     
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <section class="container">
+        <a class="navbar-brand" href="#">
+          Alex Rai
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-derechos">
-                  <p class="copy">&copy; 2020 Alex Rai </p>
-                </div>
-              </div>
-        </footer>
-    </body>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-main" href="#contact">Work together</a>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-content__me">
+            <h1>
+              Hi! I'm <strong>Rai Delgado</strong><br />
+              Full stack <strong>web developer</strong><br />
+              with passion for never<br />stop <strong>learning</strong>
+            </h1>
+          </div>
+          <img
+            class="hero-content__img"
+            src="images/rai.jpg"
+            width="500px"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      
+      <section  id="projects">
+        <h1 class="title-section">Projects</h1>
+        <div class="projects">
+          <div class="projects__container">
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+
+
+      </section>
+    </main>
+
+    <section class="contact" id="contact">
+      <div class="contact-content container">
+        <h1>Do we create something together?</h1>
+        <img class="contact-img" src="images/programming.svg" alt="alt" >
+        <div class="contact-social-media">
+          <a href="https://www.youtube.com/channel/UCCp8w_C32iiKw0FIqSy81jQ/featured?view_as=subscriber" target="_black"
+          ><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com/RaiDelgado3" target="_black"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/alexRai98" target="_black"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/alexander-rai-delgado-cove%C3%B1as/"
+            target="_black"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-derechos">
+          <p class="copy">&copy; 2020 Alex Rai</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
