@@ -9,7 +9,7 @@
   /* --gradient-blue: #23475d; */
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
 }
 img {
   width: 100%;
