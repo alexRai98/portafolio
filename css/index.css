@@ -72,7 +72,6 @@ img {
 }
 
 .projects {
-  overflow-x: scroll;
   padding-left: 30px;
   width: 100%;
   position: relative;
@@ -84,7 +83,7 @@ img {
   transition: 450ms transform;
   transition: 450ms transform, 450ms -webkit-transform;
   font-size: 0;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin: 70px 0px;
   padding-bottom: 10px;
 }
@@ -251,7 +250,7 @@ img {
     "title img";
   padding: 20px 0px;
 }
-.contact-content h1 {
+.contact-content h3 {
   color: #ffffff;
   grid-area: title;
   text-align: center;
