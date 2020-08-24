@@ -2,6 +2,13 @@ const SectionPorjects = document.querySelector(".projects__container");
 
 const projects = [
   {
+    name: "Comprable",
+    img: "images/comprable.jpg",
+    description: "E-commers for sale foot",
+    tech: ["redux","react", "emotion", "rails"],
+    website: "https://comprable.netlify.app/",
+  },
+  {
     name: "{Keepable} ✏️",
     img: "images/keepable.jpg",
     description: "Website for management notes",
@@ -36,13 +43,13 @@ const projects = [
     tech: ["bootstrap", "html", "css"],
     website: "https://alexrai98.github.io/soldevila/",
   },
-//   {
-//     name: "Bitacora",
-//     img: "images/bitacora.jpg",
-//     description: "Innovation Bootcamp",
-//     tech: ["bootstrap", "html", "css"],
-//     website: "https://alexrai98.github.io/bitacoraP/",
-//   },
+  {
+    name: "Bitacora",
+    img: "images/bitacora.jpg",
+    description: "Innovation Bootcamp",
+    tech: ["bootstrap", "html", "css"],
+    website: "https://alexrai98.github.io/bitacoraP/",
+  },
 ];
 
 function RenderPorjects(projects) {
